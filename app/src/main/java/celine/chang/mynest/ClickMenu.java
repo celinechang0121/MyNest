@@ -1,4 +1,4 @@
-package celine.chang.mynest.;
+package celine.chang.mynest;
 
 import android.os.Bundle;
 

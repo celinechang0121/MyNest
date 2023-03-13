@@ -21,12 +21,62 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Menu"
+        <activity android:name=".ClothingMenu"
             android:exported="true">
             <intent-filter >
                 <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ClickMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DonateMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EducationclickMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EducationdonateMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EducationMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PdfMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ReceiveMenu"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
 
     </application>
 
