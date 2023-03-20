@@ -24,7 +24,7 @@ public class Menu extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, ClothingMenu.class);
+                Intent it = new Intent(Menu.this, DonateMenu.class);
                 startActivity(it);
             }
         });
@@ -33,7 +33,7 @@ public class Menu extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent( Menu.this, EducationMenu.class);
+                Intent it = new Intent( Menu.this, ReceiveMenu.class);
                 startActivity(it);
             }
         });

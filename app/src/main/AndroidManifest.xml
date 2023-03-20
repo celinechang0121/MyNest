@@ -21,13 +21,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ClothingMenu"
-            android:exported="true">
-            <intent-filter >
-                <action android:name="android.intent.action.VIEW"/>
-            </intent-filter>
-        </activity>
-
         <activity android:name=".ClickMenu"
             android:exported="true">
             <intent-filter >
@@ -50,13 +43,6 @@
         </activity>
 
         <activity android:name=".EducationdonateMenu"
-            android:exported="true">
-            <intent-filter >
-                <action android:name="android.intent.action.VIEW"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".EducationMenu"
             android:exported="true">
             <intent-filter >
                 <action android:name="android.intent.action.VIEW"/>

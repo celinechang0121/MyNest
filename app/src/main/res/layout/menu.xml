@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="#FFFFFF"
-        android:text="Hope Market"
+        android:text="My Nest"
         android:layout_margin="80dp"
         android:textColor="@color/black"
         android:textSize="29dp"/>
@@ -25,7 +25,7 @@
         android:layout_marginBottom="20dp"
         android:textColor="@color/black"
         android:backgroundTint="#B9E4A9"
-        android:text="Clothing"
+        android:text="Donate"
         android:textSize="18dp" />
 
     <Button
@@ -37,7 +37,7 @@
         android:layout_marginBottom="10dp"
         android:textColor="@color/black"
         android:backgroundTint="#B9E4A9"
-        android:text="Educatiodddn"
+        android:text="Receive"
         android:textSize="18dp" />
 
 
