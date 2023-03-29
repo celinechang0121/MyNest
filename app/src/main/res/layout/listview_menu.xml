@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="NUMBER"
-            android:background="#B2EBF4"
+            android:background="#B7F1B7"
             android:gravity="center"/>
 
         <TextView
@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text="ITEM"
-            android:background="#B7F0B1"
+            android:background="#B1D7F0"
             android:gravity="center"/>
 
     </LinearLayout>

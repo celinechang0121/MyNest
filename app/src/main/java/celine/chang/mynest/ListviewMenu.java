@@ -1,10 +1,20 @@
 package celine.chang.mynest;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 public class ListviewMenu extends AppCompatActivity {
 
@@ -13,15 +23,15 @@ public class ListviewMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_menu);
 
-        ListView listview = findViewById(R.id.listView);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ListView listview = findViewById(R.id.listView);
         ListViewAdapter adapter = new ListViewAdapter();
 
-        //Adapter 안에 아이템의 정보 담기
+        //Adapter 안에 아이템 의 정보 담기
         adapter.addItem(new Item("1", "item1"));
         adapter.addItem(new Item("2", "item2"));
         adapter.addItem(new Item("3", "item3"));
 
-        //리스트뷰에 Adapter 설정
+        //리스트 뷰에 Adapter 설정
         listview.setAdapter(adapter);
     }
 
@@ -49,6 +59,11 @@ public class ListviewMenu extends AppCompatActivity {
         }
 
         @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            return null;
+        }
+
+        @Override
         public View getView(int position, View convertView, ViewGroup viewGroup) {
             final Context context = viewGroup.getContext();
             final Item item = items.get(position);
@@ -72,9 +87,10 @@ public class ListviewMenu extends AppCompatActivity {
             });
 
             return convertView;  //뷰 객체 반환
+
+
         }
     }
-} {
 }
 
 
