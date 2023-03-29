@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417671265828",
+    "project_id": "sharenest-2bc26",
+    "storage_bucket": "sharenest-2bc26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417671265828:android:d4b7317cf12852ca97e2b1",
+        "android_client_info": {
+          "package_name": "celine.chang.mynest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417671265828-8jdhs1gj9s7rmjvjk56tt9d1f88gji64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlA-mu7uUDF9ihoVuCizLjlG5Fxqpfwvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417671265828-8jdhs1gj9s7rmjvjk56tt9d1f88gji64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
