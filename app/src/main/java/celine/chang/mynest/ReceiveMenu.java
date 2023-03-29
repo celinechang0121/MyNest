@@ -17,6 +17,15 @@ public class ReceiveMenu extends AppCompatActivity {
         //define
         String a = "hello";
 
+        Button btn1 = findViewById(R.id.button4);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(ReceiveMenu.this, Menu.class);
+                startActivity(it);
+            }
+        });
+
 
     }
 }
