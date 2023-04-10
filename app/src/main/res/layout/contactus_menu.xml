@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:backgroundTint="#000000"
+        android:text="Contact our Mentors!"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B9E4A9"
+        android:text="010-4556-3251" />
+
+
+    <Button
+        android:id="@+id/button_call2"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#B9E4A9"
+        android:text="010-5480-3251" />
+
+
+</LinearLayout>
+
