@@ -43,7 +43,21 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        v
+        <activity
+            android:name=".FakeMap"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PdfMenu"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".Join"
             android:exported="true" >
@@ -65,13 +79,7 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".PdfMenu"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-            </intent-filter>
-        </activity>
+
         <activity
             android:name=".ReceiveMenu"
             android:exported="true" >

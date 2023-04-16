@@ -78,7 +78,16 @@ public class Menu extends AppCompatActivity {
         btnmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent( Menu.this, MyMap.class);
+                Intent it = new Intent( Menu.this, FakeMap.class);
+                startActivity(it);
+            }
+        });
+
+        Button btnpdf = findViewById(R.id.button4);
+        btnpdf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent( Menu.this, PdfMenu.class);
                 startActivity(it);
             }
         });
