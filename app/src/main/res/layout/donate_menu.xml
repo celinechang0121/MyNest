@@ -5,98 +5,145 @@
     android:padding="30dp"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#000000"
-        android:padding="1dp"
-        android:text="Donate"
-        android:layout_margin="80dp"
-        android:textColor="@color/black"
-        android:textSize="25dp"/>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00BCD4"
+            android:text="upload an image" />
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#B9E4A9"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="Title:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type title" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/button6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#B9E4A9"
+            android:paddingTop="10dp"
+            android:text="Choose Category:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="Food" />
 
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothing" />
 
-            <TextView
-                android:id="@+id/button2"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="#B9E4A9"
-                android:paddingTop="20dp"
-                android:paddingBottom="10dp"
-                android:text="Title:"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
-
-            <com.google.android.material.textfield.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp">>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/categoryinput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="49dp"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/titleinput"
-                    android:hint="type title" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:gravity="top"
+                android:hint="Other:" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#B9E4A9"
+            android:paddingTop="10dp"
+            android:text="Desciption:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptioninput"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+
+                android:gravity="top"
+                android:hint="type here" />
 
             <TextView
-                android:id="@+id/button3"
+                android:id="@+id/button5"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="#B9E4A9"
                 android:paddingTop="10dp"
-                android:text="Desciption:"
+                android:text="Price"
                 android:textColor="@color/black"
                 android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="40dp">
+                android:layout_gravity="top"
+                android:hint="type here" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:gravity="top"
 
-                    android:id="@+id/descriptioninput"
-                    android:hint="type here" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="upload an image"
-                android:layout_gravity="center"
-                android:backgroundTint="#00BCD4"
-                android:id="@+id/btn_gallery"
-                />
-            <Button
-                android:id="@+id/btn_submit"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:backgroundTint="#B9E4A9"
-                android:paddingTop="30dp"
-                android:paddingBottom="20dp"
-                android:text="Submit"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#B9E4A9"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
 
 
 </LinearLayout>
