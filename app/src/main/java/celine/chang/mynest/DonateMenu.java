@@ -2,6 +2,7 @@ package celine.chang.mynest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -31,7 +32,8 @@ public class DonateMenu extends AppCompatActivity {
         user = mAuth.getCurrentUser();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://mynest-dec57-default-rtdb.asia-southeast1.firebasedatabase.app/" );
-        DatabaseReference myRef = database.getReference();
+        DatabaseReference myRef1 = database.getReference("cntOfitems");
+        DatabaseReference myRef2 = database.getReference("Items");
 
         TextInputEditText title =findViewById(R.id.titleinput);
         TextInputEditText des =findViewById(R.id.descriptioninput);
@@ -40,12 +42,14 @@ public class DonateMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ItemDTO itemDTO = new ItemDTO(title.getText().toString(), 3, des.getText().toString());
-                myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                myRef1.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        Integer cnt = snapshot.getValue(Integer.class);
+                        Long cnt = (Long) snapshot.getValue();
+                        Log.d("cnt>>>>>>>", String.valueOf(cnt));
+                        myRef2.setValue(cnt+1);
                         String cntstr = cnt.toString();
-                        myRef.child("Items").child(cntstr).setValue(itemDTO);
+                        myRef2.child(cntstr).setValue(itemDTO);
                     }
 
                     @Override
@@ -53,6 +57,9 @@ public class DonateMenu extends AppCompatActivity {
 
                     }
                 });
+                Intent it = new Intent(getApplicationContext(), Completed.class);
+                startActivity(it);
+                finish();
             }
         });
 

@@ -2,6 +2,7 @@ package celine.chang.mynest;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,17 +21,19 @@ public class ItemAdapter extends BaseAdapter {
     public ItemAdapter(Context context, ArrayList<ItemDTO> data) {
         mContext = context;
         sample = data;
+        Log.e("DATA>>", data.get(0).getTitle());
         mLayoutInflater = LayoutInflater.from(mContext);
+    }
+
+
+    @Override
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public int getCount() {
         return sample.size();
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
     }
 
     @Override
@@ -45,8 +48,8 @@ public class ItemAdapter extends BaseAdapter {
         ImageView imageView = (ImageView)view.findViewById(R.id.img);
         TextView title = (TextView)view.findViewById(R.id.title);
         TextView description = (TextView)view.findViewById(R.id.description);
-
-        imageView.setImageResource(sample.get(position).getImg());
+        imageView.setImageResource(R.drawable.s1);
+       // imageView.setImageResource(sample.get(position).getImg());
         title.setText(sample.get(position).getTitle());
         description.setText(sample.get(position).getDescription());
 

@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:textColor="@color/black"
         android:backgroundTint="#B9E4A9"
         android:text="Donate"
@@ -62,6 +62,16 @@
         android:text="Tips"
         android:textColor="@color/black"
         android:textSize="18dp" />
-
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#B9E4A9"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="map"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
 
 </LinearLayout>

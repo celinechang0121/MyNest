@@ -12,6 +12,13 @@
         android:maxSdkVersion="29" />
     <uses-permission android:name="READ_PHONE_NUMBERS" />
 
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="${MAPS_API_KEY}" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,6 +29,7 @@
         android:theme="@style/Theme.MyNest"
         android:usesCleartextTraffic="true"
         tools:ignore="ExtraText"
+
         tools:targetApi="31" >
         <activity
             android:name=".Login"
@@ -82,5 +90,12 @@
             <action android:name="android.intent.action.VIEW" />
         </intent-filter>
     </activity>
+        <activity
+            android:name=".MyMap"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
 </application>
 </manifest>

@@ -12,6 +12,8 @@ public class ItemDTO {
         this.description=description;
     }
 
+    public ItemDTO(){}
+
     public String getTitle() {
         return title;
     }
