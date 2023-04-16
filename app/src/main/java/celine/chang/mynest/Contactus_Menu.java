@@ -24,11 +24,15 @@ public class Contactus_Menu extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String number = "123";
+            String number = "12312313";
             Intent it = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
             startActivity(it);
             }
         });
+
+
+
+
     }
 }
 
