@@ -21,10 +21,12 @@ public class Contactus_Menu extends AppCompatActivity {
         Button btn1 = findViewById(R.id.button_call);
         Button btn2 = findViewById(R.id.button_call2);
 
+
         btn1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             String number = "12312313";
+            //call intent
             Intent it = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
             startActivity(it);
             }

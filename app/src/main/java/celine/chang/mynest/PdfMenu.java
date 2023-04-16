@@ -24,6 +24,7 @@ public class PdfMenu extends AppCompatActivity {
         math.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //internet intent
                 Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://kyparkconnaissance.blogspot.com/2022/12/android-studio-auto-complete-code.html"));
                 startActivity(it);
             }
