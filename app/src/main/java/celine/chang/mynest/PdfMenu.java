@@ -16,20 +16,46 @@ public class PdfMenu extends AppCompatActivity {
         setContentView(R.layout.pdf_menu);
 
 
-        Button math = findViewById(R.id.button2);
-        Button english = findViewById(R.id.button3);
-        Button science = findViewById(R.id.button4);
-        Button etc = findViewById(R.id.button5);
+        Button finance = findViewById(R.id.button2);
+        Button jobs = findViewById(R.id.button3);
+        Button women = findViewById(R.id.button4);
+        Button housing = findViewById(R.id.button5);
 
-        math.setOnClickListener(new View.OnClickListener() {
+        finance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //internet intent
-                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://kyparkconnaissance.blogspot.com/2022/12/android-studio-auto-complete-code.html"));
+                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youth.seoul.go.kr/site/main/content/youth_allowance_justice"));
                 startActivity(it);
             }
         });
 
+        jobs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //internet intent
+                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youthcenter.go.kr/entrProg/entrProgList.do"));
+                startActivity(it);
+            }
+        });
+
+        women.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //internet intent
+                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.lh.or.kr/contents/cont.do?sCode=user&mId=234&mPid=231"));
+                startActivity(it);
+            }
+        });
+
+        housing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //internet intent
+                Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("https://central.childcare.go.kr/ccef/main.jsp"));
+                startActivity(it);
+            }
+        });
 
     }
 
