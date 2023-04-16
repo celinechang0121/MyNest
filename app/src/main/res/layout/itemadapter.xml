@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"
-        android:text="title" />
+        android:text="Sweater" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="description" />
+        android:text="This is a sage green colored sweater from Uniqlo that I bought in 2022. I only wore this twice as there are no rips or marks." />
 
     <ImageView
         android:id="@+id/img"

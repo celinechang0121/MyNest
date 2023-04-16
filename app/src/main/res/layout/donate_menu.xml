@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:padding="30dp"
     android:layout_height="match_parent">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,18 +104,17 @@
                 android:gravity="top"
                 android:hint="type here" />
 
+            <TextView
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#B9E4A9"
+                android:paddingTop="10dp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/button5"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#B9E4A9"
-            android:paddingTop="10dp"
-            android:text="Price"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -144,9 +141,6 @@
             android:text="Submit"
             android:textColor="@color/black"
             android:textSize="16dp" />
-
+F
     </LinearLayout>
-    </ScrollView>
-
-
 </LinearLayout>
