@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "417671265828",
-    "project_id": "sharenest-2bc26",
-    "storage_bucket": "sharenest-2bc26.appspot.com"
+    "project_number": "772124294121",
+    "firebase_url": "https://mynest-dec57-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mynest-dec57",
+    "storage_bucket": "mynest-dec57.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:417671265828:android:d4b7317cf12852ca97e2b1",
+        "mobilesdk_app_id": "1:772124294121:android:391f4ac182af5450332978",
         "android_client_info": {
           "package_name": "celine.chang.mynest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "417671265828-8jdhs1gj9s7rmjvjk56tt9d1f88gji64.apps.googleusercontent.com",
+          "client_id": "772124294121-cmqj4s4ckiuruojmq7bime49gknihev9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "celine.chang.mynest",
+            "certificate_hash": "e43fa9269649bca4b0baaacfaa1dec7fbf8f56f0"
+          }
+        },
+        {
+          "client_id": "772124294121-n2sbne3tocks796ck56osefschmtuo2a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDlA-mu7uUDF9ihoVuCizLjlG5Fxqpfwvg"
+          "current_key": "AIzaSyDfKuCZjLTda7nNa1YaXjVPalgS6d7UokA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "417671265828-8jdhs1gj9s7rmjvjk56tt9d1f88gji64.apps.googleusercontent.com",
+              "client_id": "772124294121-n2sbne3tocks796ck56osefschmtuo2a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

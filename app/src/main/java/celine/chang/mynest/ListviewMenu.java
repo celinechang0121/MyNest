@@ -23,9 +23,7 @@ public class ListviewMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_menu);
 
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ListView listview = findViewById(R.id.listView);
-        ListViewAdapter adapter = new ListViewAdapter();
-
+     /*
         //Adapter 안에 아이템 의 정보 담기
         adapter.addItem(new Item("1", "item1"));
         adapter.addItem(new Item("2", "item2"));
@@ -34,6 +32,8 @@ public class ListviewMenu extends AppCompatActivity {
 
         //리스트 뷰에 Adapter 설정
         listview.setAdapter(adapter);
+        */
+
     }
 
     /* 리스트뷰 어댑터 */

@@ -12,9 +12,19 @@
         android:layout_gravity="center"
         android:backgroundTint="#FFFFFF"
         android:text="My Nest"
-        android:layout_margin="80dp"
+        android:layout_marginTop="80dp"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="29dp"/>
+    <TextView
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        android:textSize="15dp"/>
 
     <Button
         android:id="@+id/button2"

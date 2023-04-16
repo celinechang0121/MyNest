@@ -5,26 +5,60 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class DonateMenu extends AppCompatActivity {
+    private FirebaseAuth mAuth;
+    FirebaseUser user;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donate_menu);
 
-        //define
-        String a = "hello";
 
-        Button btn1 = findViewById(R.id.button4);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        mAuth = FirebaseAuth.getInstance();
+        user = mAuth.getCurrentUser();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://mynest-dec57-default-rtdb.asia-southeast1.firebasedatabase.app/" );
+        DatabaseReference myRef = database.getReference();
+
+        TextInputEditText title =findViewById(R.id.titleinput);
+        TextInputEditText des =findViewById(R.id.descriptioninput);
+        Button btn = findViewById(R.id.btn_submit);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent it = new Intent(DonateMenu.this, Menu.class);
-                startActivity(it);
+            public void onClick(View v) {
+                ItemDTO itemDTO = new ItemDTO(title.getText().toString(), 3, des.getText().toString());
+                myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        Integer cnt = snapshot.getValue(Integer.class);
+                        String cntstr = cnt.toString();
+                        myRef.child("Items").child(cntstr).setValue(itemDTO);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
         });
+
+
+
+
 
 
 
