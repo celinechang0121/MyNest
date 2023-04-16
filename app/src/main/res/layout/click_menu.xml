@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:padding="30dp"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/button1"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_margin="20dp"
         android:backgroundTint="#000000"
         android:text="Object name*"
         android:textColor="@color/black"
@@ -20,33 +21,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/s1" />
-
     <TextView
-        android:id="@+id/button2"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#000000"
+        android:text="Explanation:"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="#000000"
         android:text="Explanation:"
         android:textColor="@color/black"
-        android:textSize="25dp" />
+        android:textSize="10dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="type here" />
 
     <Button
         android:id="@+id/button4"
@@ -54,10 +48,11 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:textColor="@color/black"
         android:backgroundTint="#B9E4A9"
-        android:text="Start Chat"
+        android:text="Request"
         android:textSize="16dp" />
 
 
