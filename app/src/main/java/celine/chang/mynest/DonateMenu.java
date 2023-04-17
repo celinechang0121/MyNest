@@ -66,7 +66,7 @@ public class DonateMenu extends AppCompatActivity {
 
                     }
                 });
-                Intent it = new Intent(getApplicationContext(), Completed.class);
+                Intent it = new Intent(DonateMenu.this, Completed.class);
                 startActivity(it);
                 finish();
             }

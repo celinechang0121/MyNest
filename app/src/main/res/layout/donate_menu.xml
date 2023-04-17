@@ -139,6 +139,6 @@
             android:text="Submit"
             android:textColor="@color/black"
             android:textSize="16dp" />
-F
+
     </LinearLayout>
 </LinearLayout>
