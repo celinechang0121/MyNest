@@ -92,6 +92,15 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Button btncall = findViewById(R.id.button6);
+        btncall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent( Menu.this, Contactus_Menu.class);
+                startActivity(it);
+            }
+        });
+
 
 
     }
