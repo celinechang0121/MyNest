@@ -56,12 +56,10 @@
             android:textColor="@color/black"
             android:textSize="18dp" />
 
-
-        <CheckBox
-            android:id="@+id/checkBox5"
+        <Spinner
+            android:id="@+id/cat_spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Food" />
+            android:layout_height="wrap_content" />
 
         <CheckBox
             android:id="@+id/checkBox4"

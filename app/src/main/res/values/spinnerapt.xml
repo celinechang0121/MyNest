@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cat_array">
+    <item>food</item>
+    <item>clothing</item>
+    <item>necessity</item>
+    <item>electric </item>
+    <item>device</item>
+    <item>academic supplies</item>
+    <item>furniture </item>
+</string-array>
+
+</resources>

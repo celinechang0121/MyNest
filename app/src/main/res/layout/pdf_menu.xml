@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="Math"
+        android:text="Finance"
         android:textColor="@color/black"
         android:textSize="18dp" />
 
@@ -38,7 +38,7 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="English"
+        android:text="Housing"
         android:textColor="@color/black"
         android:textSize="18dp" />
 
@@ -51,7 +51,7 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="Science"
+        android:text="Woman"
         android:textColor="@color/black"
         android:textSize="18dp" />
 
@@ -64,7 +64,7 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="ETC"
+        android:text="Job"
         android:textColor="@color/black"
         android:textSize="18dp" />
 
